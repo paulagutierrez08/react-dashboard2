@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: "Baloo 2";
+  overflow: hidden;
+}
+
+.menu-container {
+  background-color: #3730A2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list-icons {
+  width: 100%;
+}
+
+.branding {
+  background: linear-gradient(to right, #4239C8, #322E83)
+}
