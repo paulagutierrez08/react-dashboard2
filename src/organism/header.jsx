@@ -5,7 +5,7 @@ import {AccountCircleOutlined, NotificationsNoneOutlined, SearchOutlined} from "
 
 const ICON_STYLES = {color: "#9CA3AF"};
 
-function Header (){
+function Header({search, onSearch}){
     return (
         <Paper elevation={0}>
             <Grid container sx={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
@@ -14,7 +14,7 @@ function Header (){
                         <SearchOutlined/>
                     </IconButton>
                     <InputBase 
-                        sx={{ml:1, flex:1}} placeholder="Search here"
+                        sx={{ml:1, flex:1}} placeholder="Search here" value={search} onChange={onSearch}
                     />
                 </Box>
                 <Grid item>

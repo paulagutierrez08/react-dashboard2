@@ -1,13 +1,7 @@
 body {
   margin: 0;
-  font-family: Baloo 2;
+  font-family: "Baloo 2";
   overflow: hidden;
-}
-
-.search-box {
-  background-color: #F3F4F6;
-  border: 1px solid #F3F4F6;
-  right: 20px;
 }
 
 .menu-container {
@@ -16,12 +10,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-/* .list-icons {
+.list-icons {
   width: 100%;
 }
 
-.content-container {
-  padding: 15px;
-} */
+.branding {
+  background: linear-gradient(to right, #4239C8, #322E83)
+}

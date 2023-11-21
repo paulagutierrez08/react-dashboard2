@@ -6,11 +6,17 @@ import Menu from "../organism/menu"
 import Layout from "../templates/layout";
 
 function App() {
+  const [search, setSearch] = React.useState("")
+
+  const handleSearch = (event) => {
+    setSearch(event.target.value)
+  } 
+
   return (
     <div className="App">
       <Layout>
+        <Header search={search} onSearch={handleSearch}/>
         <Menu/>
-        <Header/>
         <Branding/>
       </Layout>
     </div>

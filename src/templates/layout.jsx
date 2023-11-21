@@ -8,10 +8,10 @@ function Layout ({children}) {
     return (
         <Box style={{display: "flex", height: "100vh"}}>
             <CssBaseline/>
-            <Grid container>
-                <Grid item flexBasis={70}>{header}</Grid>
+            <Grid container sx={{flexGrow:1}}>
+                <Grid item flexBasis={57}>{menu}</Grid>
                 <Grid item flex={1}>
-                    <Grid xs={12} m={2}>{menu}</Grid>
+                    <Grid xs={12} m={2}>{header}</Grid>
                     <Grid xs={12} m={3}>{branding}</Grid>
                     <Grid container>
                         <Grid xs={3}>PKI</Grid>
